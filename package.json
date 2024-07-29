@@ -1,0 +1,40 @@
+{
+  "name": "sftp-to-ssh",
+  "displayName": "SFTP to SSH",
+  "description": "SFTP Sync to SSH",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.sshConnect"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.sshConnect",
+        "title": "SSH Connect"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "extension.sshConnect",
+          "when": "resourceFilename == sftp.json",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThomasTSWD/sftp-to-ssh.git"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.91.0",
+    "vscode-test": "^1.6.0"
+  },
+  "publisher": "ThomasTSWD",
+  "icon": "icon.png"
+}
