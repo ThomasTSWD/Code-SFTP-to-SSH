@@ -1,6 +1,6 @@
 {
   "name": "sftp-to-ssh",
-  "displayName": "SFTP to SSH",
+  "displayName": "VS Code SFTP to SSH",
   "description": "SFTP Sync to SSH",
   "version": "0.0.1",
   "engines": {
